@@ -9,10 +9,9 @@
 get_header();
 ?>
     <main id="content" role="main">
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="three-quarters-block">
+        <div class="container">
+                <div class="row news">
+                    <div class="col-md-6  text-left">
                         <?php if ( have_posts() ) : ?>
                             <?php /* начинается цикл */ ?>
                             <?php while ( have_posts() ) : the_post(); ?>
@@ -41,9 +40,9 @@ get_header();
                     ?>
                     <!-- end sidebar -->
 
-                </div> <!-- .row -->
-            </div> <!-- .container -->
-        </div> <!-- .section -->
+                </div> <!-- .row news -->
+        </div> <!-- .container -->
+        
 
 
     </main> <!-- #content -->
